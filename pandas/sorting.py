@@ -17,6 +17,6 @@ print(df)
 print("\nSorted:")
 print(sorted_df)
 
-sorted_df = df.sort_values("Rating", ascending=False)
+sorted_df1 = df.sort_values("Rating", ascending=False)
 
-print(sorted_df)
+print(sorted_df1)
