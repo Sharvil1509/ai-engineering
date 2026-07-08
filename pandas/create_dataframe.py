@@ -33,3 +33,7 @@ print(type(df.iloc[2:3]))
 
 df = df.set_index("Title")
 print(df)
+print(df.iloc[[1]])
+df.loc["Titanic"]
+
+print((df["Year"] > 2000) & (df["Rating"] > 8.7))
