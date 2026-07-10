@@ -17,3 +17,4 @@ print(filled_df)
 
 df["Rating"] = df["Rating"].fillna(0)
 print(df)
+
