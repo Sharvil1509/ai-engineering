@@ -7,8 +7,11 @@ while running :
       2. Add Notes
       3. Replace All Notes
       4. Exit""")
-
-    x = int(input("Enter the Task Number :"))
+    try :
+        x = int(input("Enter the Task Number :"))
+    except ValueError :
+        print("Invalid input")
+        continue
 
     if x == 1 :
         with open("notes.txt","r") as file:
@@ -24,7 +27,7 @@ while running :
     
     elif x == 4 :
         print("Thanks for using Notes Manager!")
-        running = False
+        break
     
     else :
         print("Invalid input")    
